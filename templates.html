@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script>
+	function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+  var copyRadio = document.getElementById("myInput1").value;
+
+  /* Select the text field */
+  copyText.select();
+  copyRadio.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  //alert("Copied the text: " + copyText.value);
+}</script>
+	<head>
+		<title>
+		
+		</title>
+	</head>
+	<body>
+		<!-- The text field -->
+		<input type="text" value="Hello World" id="myInput">
+		<p></p>
+		<input type="radio" value="N/A" id="myInput1">
+
+		<!-- The button used to copy the text -->
+		<button onclick="myFunction()">5-minute</button>
+	</body>
+</html>
